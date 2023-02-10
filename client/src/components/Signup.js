@@ -50,7 +50,7 @@ const Signup = () => {
               </h2>
               <div className="  flex flex-col text-gray-700 py-2">
                 <label className=" text-white font-bold text-left">
-                  User Name
+                  User Namex
                 </label>
                 <input
                   className="text-black w-full my-5 py-3 white shadow-lg shadow-teal-500/20 hover:shadow-teal-500/20 text-white font-semibold rounded-lg"
