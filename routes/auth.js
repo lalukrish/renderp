@@ -32,7 +32,8 @@ router.post("/signup", (req, res) => {
           .save()
           .then((user) => {
             res.json({ message: "saved sucessfully" });
-          })
+        
+app.use(require("./routes/auth"));  })
           .catch((err) => {
             console.log(err);
           });
@@ -42,4 +43,7 @@ router.post("/signup", (req, res) => {
       console.log(err);
     });
 });
+router.get("/get",(req,res)=> {
+  res.send("hello this is get from render method")
+})
 module.exports = router;
