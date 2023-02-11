@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import signup_img from "../assets/signup_img.jpg";
 import M from "materialize-css";
+import axios from "axios";
 const Signup = () => {
   const history = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const postData = () => {
-    fetch("http://localhost:7000/signup", {
+    fetch("/signup", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
